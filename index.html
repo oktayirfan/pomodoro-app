@@ -9,7 +9,7 @@
 <body>
     <div class="container">
         <h1 class="title">Pomodoro Timer</h1>
-        <label for="pomodoroTime">Select Pomodoro Time:</label>
+        <label for="pomodoroTime"></label>
         <select id="pomodoroTime">
             <option value="1500">25 minutes</option>
             <option value="1800">30 minutes</option>
@@ -18,7 +18,10 @@
         </select>
         <button id="updateTime">Update</button>
         <button id="confirmTime" style="display: none;">Confirm</button>
-        <p class="timer" id="timer">25:00</p>
+        <div class="timer-container" id="timerContainer">
+            <p class="timer" id="timer">25:00</p>
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
         <p class="pomodoros" id="pomodoros">Pomodoros completed: 0</p>
         <div class="button-wrapper">
             <button id="start">Start</button>
