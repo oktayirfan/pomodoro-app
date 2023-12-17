@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap');
 
+.progress-bar {
+    height: 10px;
+    width: 0;
+    background-color: #4CAF50;
+    margin-top: 10px;
+    transition: width 1s ease-in-out;
+}
+
+
+
 select{
     border: none;
     border-radius: 5px;
